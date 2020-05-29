@@ -6,7 +6,35 @@
 
     <groupId>cc.cszxyang</groupId>
     <artifactId>java-tutorial</artifactId>
+    <packaging>pom</packaging>
     <version>1.0</version>
+    <modules>
+        <module>jdk-spi</module>
+    </modules>
 
+    <properties>
+        <projectlombok-version>1.18.8</projectlombok-version>
+        <collections-version>4.4</collections-version>
+        <junit-version>4.12</junit-version>
+    </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit-version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${projectlombok-version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>${collections-version}</version>
+        </dependency>
+    </dependencies>
 </project>
