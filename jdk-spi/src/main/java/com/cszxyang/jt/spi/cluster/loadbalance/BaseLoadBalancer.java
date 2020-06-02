@@ -4,6 +4,8 @@ import com.cszxyang.jt.spi.cluster.Server;
 import com.cszxyang.jt.spi.exception.CustomException;
 import com.cszxyang.jt.spi.protocol.Request;
 import org.apache.commons.collections4.CollectionUtils;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class BaseLoadBalancer implements LoadBalancer {
@@ -11,6 +13,10 @@ public abstract class BaseLoadBalancer implements LoadBalancer {
     protected List<Server> serverList;
 
     public BaseLoadBalancer() {
+        serverList = new ArrayList<>();
+        serverList.add(new Server("127.0.0.1", 80));
+        serverList.add(new Server("127.0.0.1", 9090));
+        serverList.add(new Server("127.0.0.1", 443));
     }
 
     public BaseLoadBalancer(List<Server> serverList) {

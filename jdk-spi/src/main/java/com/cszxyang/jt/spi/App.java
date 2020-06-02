@@ -9,7 +9,7 @@ import com.cszxyang.jt.spi.protocol.Request;
 public class App {
     public static void main(String[] args) throws CustomException {
         LoadBalancer loadBalancer = LoadBalancerfactory.getLoadBalancer();
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 10; i++) {
             Server select = loadBalancer.select(new Request());
             System.out.println(select);
         }

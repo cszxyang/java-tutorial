@@ -11,6 +11,9 @@ public class RoundRobinLoadBalancer extends BaseLoadBalancer {
 
     private final AtomicInteger idx = new AtomicInteger(0);
 
+    public RoundRobinLoadBalancer() {
+    }
+
     public RoundRobinLoadBalancer(List<Server> serverList) {
         super(serverList);
     }
