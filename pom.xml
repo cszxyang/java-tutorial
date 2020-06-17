@@ -11,6 +11,7 @@
     <modules>
         <module>jdk-spi</module>
         <module>jdk-javac</module>
+        <module>diy-lombok</module>
     </modules>
 
     <properties>

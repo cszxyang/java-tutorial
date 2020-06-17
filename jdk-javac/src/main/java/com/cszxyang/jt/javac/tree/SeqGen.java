@@ -9,7 +9,6 @@ public class SeqGen {
         this.initialVal = new AtomicInteger(initialVal);
     }
 
-
     public String next() {
         this.initialVal.getAndIncrement();
         return String.valueOf(this.initialVal.get());
