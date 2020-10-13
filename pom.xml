@@ -18,7 +18,7 @@
         <java-version>1.8</java-version>
         <projectlombok-version>1.18.8</projectlombok-version>
         <collections-version>4.4</collections-version>
-        <junit-version>4.12</junit-version>
+        <junit-version>4.13.1</junit-version>
     </properties>
 
     <dependencies>
